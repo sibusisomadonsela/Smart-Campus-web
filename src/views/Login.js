@@ -41,7 +41,7 @@ const Login = () => {
       }}
     >
       <Container style={{ maxWidth: 400, background: '#fff', borderRadius: 20, padding: 32, boxShadow: '0 4px 24px rgba(0,0,0,0.05)' }}>
-        <h2 className="text-center mb-1" style={{ fontWeight: 700 }}>Welcome Back</h2>
+        <h2 className="text-center mb-1" style={{ fontWeight: 700 }}>Smart Campus Portal</h2>
         <p className="text-center mb-4" style={{ color: '#444' }}>Enter your credential to login</p>
         {error && (
           <div className="alert alert-danger text-center py-2" style={{ borderRadius: 10 }}>
