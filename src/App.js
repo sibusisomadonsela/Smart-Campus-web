@@ -5,6 +5,7 @@ import Login from './views/Login';
 import Register from './views/Register';
 import ForgotPassword from './views/ForgotPassword';
 import Dashboard from './views/Dashboard';
+import StudentDashboard from './views/StudentDashboard';
 function App() {
   return (
     <div className="App">
@@ -14,6 +15,7 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/accountreset" element={<ForgotPassword />} /> 
         <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/studentdashboard" element={<StudentDashboard />} />
     </Routes>
   </div>
   );

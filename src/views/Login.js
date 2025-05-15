@@ -23,8 +23,14 @@ const Login = () => {
         password: form.password
       };
       const data = await loginApi(loginData);
-      // Save token or user info if needed: localStorage.setItem('token', data.token);
-      navigate('/dashboard'); // Change '/dashboard' to your desired route
+      // Save token or user info if needed: 
+      console.log('data : ', data.data);      
+      localStorage.setItem('user', JSON.stringify(data.data));
+      if(data.data.role === 'student'){
+        navigate('/studentdashboard');
+      }else{
+        navigate('/dashboard');
+      }
     } catch (err) {
       setError(err.message);
     }

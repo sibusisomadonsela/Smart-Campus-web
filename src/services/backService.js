@@ -13,4 +13,12 @@ export const getCampuses = async () => {
     }
 }
 
+export const getUsers = async () => {
+    try {
+        const response = await axios.get(`${baseUrl}/api/users`);
+        return response.data;
+    } catch (error) {
+        throw new Error(error.response?.data?.message || 'Getting Users failed');
+    }
+}   
   
